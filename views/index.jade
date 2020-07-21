@@ -1,5 +1,63 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  nav
+    div(id="navigation-bar")
+      div(id="photo")
+        //img(id="my-face" src="/images/my-face.jpg")
+      div(id="navigation-links")
+        div(class="navigation-link")
+          a(href="#welcome-section")
+            p(class="navigation-link-text") Про меня
+        div(class="navigation-link")
+          a(href="#projects")
+            p(class="navigation-link-text") Проекты
+        div(class="navigation-link")
+          a(href="#profiles")
+            p(class="navigation-link-text") Контакты
+  section(id="welcome-section")
+    div(id="greetings-holder")
+      p(class="section-text" id="greetings") Привет! Я Рома Бесчастных
+      p(class="section-text" id="bio") Java-разработчик (и не только)
+  section(id="projects")
+    p(class="section-text" id="projects-intro") Некоторые мои проекты
+    div(class="project-pallets-holder")
+      div(class="project-pallet-line-holder")
+        div(class="project-pallet")
+        div(class="project-pallet")
+        div(class="project-pallet")
+      div(class="project-pallet-line-holder")
+        div(class="project-pallet")
+        div(class="project-pallet")
+        div(class="project-pallet")
+    div(class="some-other-info")
+  section(id="profiles")
+    div(id="ending-text-before-contacts")
+      p(class="section-text" id="credentials-text") Контактная информация
+    div(class="contact-links-holder")
+      div(class="contact")
+      div(class="contact")
+        div(class="image-holder")
+          a(href="https://github.com/RBeschastnyh" target="_blank")
+            img(class="image" src='/images/github_logo.png' alt="GitHub")
+      div(class="contact")
+        div(class="image-holder")
+          a(href="https://t.me/Strawberoman" target="_blank")
+            img(class="image" id="telegram-logo" src="/images/telegram.svg" alt="Telegram")
+      div(class="contact")
+        div(class="image-holder")
+          a(href="mailto:romanbeschastnyh@yandex.ru" target="_blank")
+            img(class="image" id="email-logo" src="/images/email-logo.png" alt="E-mail")
+      div(class="contact")
+  footer
+    div(class="footer-text-placeholder")
+      p(class="section-text" id="footer-text") © 2020, Рома Бесчастных
+    div(class="languages-placeholder")
+      div(class="language-logo")
+        a(href="#ru" data-reload)
+          img(class="language-image" src="/images/russian-flag.png")
+      div(class="language-logo")
+        a(href="#en" data-reload)
+          img(class="language-image" src="/images/gbr-flag.png")
+
+
