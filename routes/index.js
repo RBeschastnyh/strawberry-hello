@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/en', function (req, res, next) {
+  res.render('eng-index');
+});
+
 module.exports = router;
