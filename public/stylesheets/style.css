@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(35deg, #fffbda, #dad9ff);
+  background: linear-gradient(35deg, #fffdeb, #f3f2ff);
 }
 
 nav {
@@ -40,31 +40,6 @@ footer {
   height: inherit;
   background-color: #000000;
 }
-
-/*TODO: надо что-то с фоткой мб придумать*/
-/*#photo {*/
-/*  align-self: center;*/
-/*  padding-left: 2%;*/
-/*  height: 80%;*/
-/*  width: 3.2%;*/
-/*}*/
-
-/*#my-face {*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*}*/
-
-/*#my-face:hover{*/
-/*  -webkit-animation: scale-face 1.5s;*/
-/*  -webkit-animation-fill-mode: forwards;*/
-/*}*/
-
-/*@-webkit-keyframes scale-face {*/
-/*  100%{*/
-/*    height: 500%;*/
-/*    width: 480%;*/
-/*  }*/
-/*}*/
 
 #navigation-links {
   display: flex;
